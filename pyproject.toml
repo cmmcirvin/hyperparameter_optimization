@@ -1,0 +1,20 @@
+[project]
+name = "hyperparameter_optimization"
+version = "0.0.1"
+description = "A simple example of hyperparameter optimization on MNIST1d using Ray Tune and wandb."
+authors = [
+    { name = "Caleb McIrvin", email = "calm@vt.edu" }
+]
+license = { text = "MIT" }
+dependencies = [
+    'torch >=2.5.1',
+    '"ray[tune]" >=2.39.0',
+    'wandb >=0.18.7',
+    'mnist1d >=0.0.2',
+    'tqdm >=4.67.1',
+    'einops >= 0.8.0',
+]
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
